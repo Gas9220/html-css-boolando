@@ -9,3 +9,63 @@ Reset
     margin: 0;
     padding: 0;
 }
+
+/*
+-----------
+Common
+-----------
+*/
+
+header, footer {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+-----------
+Header
+-----------
+*/
+
+header {
+    background-color: #FF6900;
+    height: 70px;
+}
+
+header, .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header-content a {
+    color: white;
+}
+
+header .header-right-content a {
+    margin-left: 8px;
+}
+
+header .header-left-content a {
+    margin-right: 8px;
+}
+
+.header-content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header-content span {
+    font-weight: 600;
+}
+
+.header-content img {
+    height: 30px;
+}
+
+
+
+
