@@ -81,10 +81,6 @@ Main
     flex-wrap: wrap;
 }
 
-.product-container:nth-child(3n) {
-}
-
-
 .product-container {
     max-width: calc(100% / 3 - 10px);
 }
@@ -141,6 +137,25 @@ Main
     text-decoration: line-through;
     margin-left: 5px;
 }
+
+/*
+-----------
+Product interactions
+-----------
+*/
+
+.images {
+    position: relative;
+}
+
+.images img:first-child {
+    position: absolute;
+}
+
+.images img:first-child:hover {
+    opacity: 0;
+}
+
 
 
 
