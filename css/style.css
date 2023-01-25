@@ -20,13 +20,14 @@ header, footer {
     color: white;
 }
 
-.header-content, .main-container {
+.header-content, .main-container, .footer-content {
     margin: 0 auto;
     width: 80%;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 /*
@@ -40,14 +41,10 @@ header {
     height: 70px;
 }
 
-header, .header-content {
+header, .header-content, .footer-content, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-header .header-content a {
-    color: white;
 }
 
 header .header-right-content a {
@@ -78,6 +75,7 @@ Main
     justify-content: space-between;
     gap: 10px;
     margin-top: 60px;
+    margin-bottom: 60px;
     flex-wrap: wrap;
 }
 
@@ -127,15 +125,17 @@ Main
     left: 60px;
 }
 
-.product-container .product-description span:last-child {
+.product-container .product-description span:nth-of-type(2) {
     color: red;
 }
 
-.product-container .product-description span:last-child::after {
-    content: '29,99€';
-    color: black;
+.product-container .product-description span:nth-of-type(3) {
     text-decoration: line-through;
     margin-left: 5px;
+}
+
+.product-container:last-child .product-image .sustainable-tag {
+    left: 0;
 }
 
 /*
@@ -156,6 +156,27 @@ Product interactions
     opacity: 0;
 }
 
+/*
+-----------
+Footer
+-----------
+*/
 
+footer {
+    background-color: #1A1A1A;
+    height: 110px;
+}
+
+footer h4 {
+    margin-bottom: 5px;
+}
+
+footer a {
+    margin-right: 5px;
+}
+
+.footer-left-content a {
+    font-size: 13px
+}
 
 
