@@ -20,6 +20,11 @@ header, footer {
     color: white;
 }
 
+.header-content, .main-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
 a {
     text-decoration: none;
 }
@@ -53,11 +58,6 @@ header .header-left-content a {
     margin-right: 8px;
 }
 
-.header-content {
-    margin: 0 auto;
-    width: 80%;
-}
-
 .header-content span {
     font-weight: 600;
 }
@@ -66,6 +66,70 @@ header .header-left-content a {
     height: 30px;
 }
 
+/*
+-----------
+Main
+-----------
+*/
+
+.main-container {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.product-container {
+    max-width: 450px;
+}
+
+.product-container > .product-image img {
+    width: 100%;
+    display: block;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image > span, i {
+    position: absolute;
+}
+
+.product-image > span {
+    bottom: 40px;
+    padding: 5px 10px;
+    color: white;
+
+}
+
+.product-image > i {
+    right: 0;
+    top: 5px;
+    padding: 20px;
+    background-color: white;
+    fill: black;
+}
+
+.discount-tag {
+    background-color: red;
+}
+
+.sustainable-tag {
+    background-color: green;
+    left: 60px;
+}
+
+.product-container .product-description span:last-child {
+    color: red;
+}
+
+.product-container .product-description span:last-child::after {
+    content: '29,99€';
+    color: black;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
 
 
 
