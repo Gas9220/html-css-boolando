@@ -30,6 +30,10 @@ a {
     color: white;
 }
 
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
 /*
 -----------
 Header
