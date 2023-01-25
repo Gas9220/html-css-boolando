@@ -76,6 +76,7 @@ Main
     background-color: lightgoldenrodyellow;
     display: flex;
     align-items: center;
+    gap: 10px;
     margin-top: 60px;
 }
 
@@ -92,8 +93,14 @@ Main
     position: relative;
 }
 
-.product-image > span, i {
+.product-image > i, .product-image > span {
     position: absolute;
+
+}
+
+.product-image > img {
+    max-height: 924px;
+
 }
 
 .product-image > span {
@@ -108,7 +115,6 @@ Main
     top: 5px;
     padding: 20px;
     background-color: white;
-    fill: black;
 }
 
 .discount-tag {
